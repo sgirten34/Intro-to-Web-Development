@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Repetition Example</title>
+<meta charset="utf-8">
+</head>
+<body>
+	<form name="form1" id="form1" action="http://webdevfoundations.net/scripts/formdemo.asp" method="post">
+		Select the day of the month:
+		<select name="day" id="day" size="1">
+			<script type="text/javascript">
+			<!--
+				var day = 1; 
+				while (day <= 31) {
+					document.writeln("<option value=\"" + day + "\"> " + day + " </option>");
+					day++;
+				}
+			// -->
+			</script>
+		</select>
+		<br> <br>
+		<input type="submit" value="Submit"> 
+	</form>
+</body>
+</html>

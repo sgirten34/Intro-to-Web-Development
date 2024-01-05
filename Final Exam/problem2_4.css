@@ -1,0 +1,32 @@
+
+#wrapper { width: 75%;
+           margin:auto;
+           border-style: solid;
+           height: 650px;}
+
+h1 { height: 60px;
+        margin: 5px;
+        text-align: center;
+        border-style: solid;
+        font-weight: bold;}
+
+h2 { text-align: right;
+     font-weight: bold;}
+
+nav { float: left;
+      width: 200px;
+      height: 400px;
+      margin: 5px;
+      border-style: solid;}
+
+nav li {text-decoration: none;}
+
+main {float: right;
+      margin: 5px;
+      width: 800px;
+      border-style: solid;
+      height: 400px;}
+
+footer {text-align: center;
+        margin: 5px;
+        border-style: solid;}

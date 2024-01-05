@@ -1,0 +1,23 @@
+
+body { background-color: yellow;
+       color: red;}
+
+h1 { background-color: white;
+     color: blue;
+     font-size: 16pt;
+     height: 30px;
+     text-align: center;}
+    
+h2 { background-color: black;
+     color: white;}
+
+h3 { background-color: orange;
+     color: green;
+     font-weight: bold;}
+
+ul li {font-family: 'Times New Roman', Times, serif;}
+
+footer { font-size: 8pt;
+         font-style: italic;
+         text-align: center;}
+    

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Music Survey</title>
+<style>
+    h1 { font-style: oblique;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    fieldset { width: 600px;
+               padding: 10;
+               margin-bottom: 10px;
+               border: none;
+               border-bottom: 1px solid limegreen;}
+    form { font-family: Verdana, Geneva, Tahoma, sans-serif;
+           padding: 10px;}
+    legend { font-family: Verdana, Geneva, Tahoma, sans-serif;
+             color:limegreen;}
+    label { text-align: right;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    input, textarea { margin-top: 10px;}
+</style>
+</head>
+<form method="POST" action="http://webdevfoundations.net/scripts/formdemo.asp">
+    <h1>Music Survey</h1>
+    <fieldset>
+        <legend>Customer Information</legend>
+        <label>Name: <input type="text" name="name" id="name"></label><br>
+        <label>E-Mail: <input type="text" name="email" id="email"></label>
+    </fieldset>
+    <fieldset>
+        <legend>Favorite Type of Music</legend>
+        <input type="checkbox" name="pop" id="pop" value="yes"><label>Pop</label><br>
+        <input type="checkbox" name="rock" id="rock" value="yes"><label>Rock</label><br>
+        <input type="checkbox" name="alternative" id="alternative"
+                value="yes"><label>Alternative</label><br>
+        <input type="checkbox" name="country" id="country"
+                value="yes"><label>Country</label>
+    </fieldset>
+    <fieldset>
+        <legend>How Often Do You Purchase Music</legend>
+        <input type="radio" name="musicPurchase" id="daily" value="daily">
+            <label>Daily</label><br>
+        <input type="radio" name="musicPurchase" id="weekly" value="weekly">
+            <label>Weekly</label><br>
+        <input type="radio" name="musicPurchase" id="monthly" value="monthly">
+            <label>Monthly</label><br>
+        <input type="radio" name="musicPurchase" id="never" value="never">
+            <label>Never</label>
+    </fieldset>
+    <fieldset>
+        <legend>Where Do You Listen To Music</legend>
+        <select size="3" multiple name="musicLocation" id="musicLocation">
+            <option><label>Select One or More Locations</label></option>
+            <option value="home"><label>At Home</label></option>
+            <option value="car"><label>In the Car</label></option>
+            <option value="work"><label>At Work</label></option>
+            <option value="shower"><label>In the Shower</label></option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>What Role Does Music Play in Your Life</legend>
+        <textarea name="musicComments" id="musicComments" cols="40" rows="4">Comments?
+        </textarea>
+    </fieldset>
+    <input type="submit">
+    <input type="reset">
+</form>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Game: Rock, Paper, Scissors </title>
+<meta charset="utf-8">
+
+
+<style type="text/stylesheet">
+	img { border:0; }
+</style>
+
+<script type="text/javascript">
+<!-- 
+	function playGame(choice) {
+		comp = Math.round((Math.random() * 2) + 1); // generate computer's choice
+		var choicename;
+		if (comp == 1) choicename = "rock";
+		if (comp == 2) choicename = "paper";
+		if (comp == 3) choicename = "scissors";
+		document.game.msg.value = "The computer chose " + choicename + ";  ";
+
+		// calculates score
+		if (choice == 1) // rock
+		{
+	        if (comp == 1) {  
+				document.game.draw.value = parseInt(document.game.draw.value) + 1; 
+				document.game.msg.value += "It is a draw.";
+			}
+	        if (comp == 2) {  
+				document.game.loss.value = parseInt(document.game.loss.value) + 1; 
+				document.game.msg.value += "You lost!";
+			}
+	        if (comp == 3) {  
+				document.game.win.value = parseInt(document.game.win.value) + 1; 
+				document.game.msg.value += "You won!";
+			}
+		}
+
+		if (choice == 2) // paper
+		{
+	        if (comp == 1) {  
+				document.game.win.value = parseInt(document.game.win.value) + 1; 
+				document.game.msg.value += "You won!";
+			}
+	        if (comp == 2) {  
+				document.game.draw.value = parseInt(document.game.draw.value) + 1; 
+				document.game.msg.value += "It is a draw.";
+			}
+	        if (comp == 3) {  
+				document.game.loss.value = parseInt(document.game.loss.value) + 1; 
+				document.game.msg.value += "You lost!";
+			}
+		}
+
+		if (choice == 3) // scissors
+		{
+	        if (comp == 1) {  
+				document.game.loss.value = parseInt(document.game.loss.value) + 1; 
+				document.game.msg.value += "You lost!";
+			}
+	        if (comp == 2) {  
+				document.game.win.value = parseInt(document.game.win.value) + 1; 
+				document.game.msg.value += "You won!";
+			}
+	        if (comp == 3) {  
+				document.game.draw.value = parseInt(document.game.draw.value) + 1; 
+				document.game.msg.value += "It is a draw.";
+			}
+		}
+
+		document.game.msg.value += "  Go again!";
+	}
+//  -->
+</script>
+</head>
+
+<body>
+	<form name="game">
+		<table border="1" cellpadding="5">
+			<tr>
+				<td align="center">User:</td>
+				<td align="center"><button type="button" onClick="playGame(1);"><img src="rock.gif" width="29" height="23" alt="rock"/></button></td>
+				<td align="center"><button type="button" onClick="playGame(2);"><img src="paper.gif" width="29" height="23" alt="paper"/></button></td>
+				<td align="center"><button type="button" onClick="playGame(3);"><img src="scissors.gif" width="29" height="23" alt="scissors"/></button></td>
+			</tr>
+			<tr>
+				<td colspan="4" align="center">
+				<input type="text" name="msg" id ="msg" size="45"/>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="4" align="center">
+				<input type="text" name="win" readonly="readonly" value="0" size="2"/> Wins  
+				<input type="text" name="loss" readonly="readonly" value="0" size="2"/> Losses   
+				<input type="text" name="draw" readonly="readonly" value="0" size="2"/> Draws
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Problem 6</title>
+        <style>
+            fieldset{ width: 70%;}
+            legend { color: blue;}
+            .container { width: 200px;}
+            .right { float: right;}
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <legend>Student Information</legend>
+            <div>
+                <label>Name: <input type="text" name="name" id="name"
+                   size="60"></label><br><br>
+                <label>Age: <input type="text" name="age" id="age"
+                   size="20"></label>
+                <label>Sex: <input type="text" name="sex" id="sex"
+                    size="20"></label><br><br>
+            </div>
+            <p>Select your major (multiple selections allowed)</p>
+            <div>
+                <select size="5" name="major" id="major"  multiple>
+                    <option value="bis">Business Informatics</option>
+                    <option value="cit">Computer Information Technology</option>
+                    <option value="csc">Computer Science</option>
+                    <option value="mis">Media Informatics</option>
+                    <option value="other">Other</option>
+                </select><br>
+            </div>
+            <p>Select all the activities you are interested in:</p>
+            <div class="container">
+                Gaming<input type="checkbox"  class="right"
+                     name="gaming" id="gaming" value="yes"><br>
+                Computer Hardware<input type="checkbox" class="right"
+                    name="hardware" id="hardware" value="yes"><br>
+                Programming<input type="checkbox" class="right"
+                    name="programming" id="programming" value="yes"><br>
+                Other<input type="checkbox" class="right"
+                    name="other" id="other" value="yes"><br>
+            </div>
+            <p>Select payment method:</p>
+            <div class="container">
+                NKU All Card<input type="radio" class="right"
+                    name="allCard" id="allCard" value="yes"><br>
+                Mastercard<input type="radio" class="right"
+                    name="mastercared" id="mastercard" value="yes"><br>
+                Visa<input type="radio" class="right"
+                    name="visa" id="visa" value="yes"><br>
+                Discover<input type="radio" class="right" 
+                    name="discover" id="discover" value="yes"><br>
+            </div>
+        </fieldset>
+        <div class="container">
+            <br><input type="submit">
+            <input type="reset" class="right">
+        </div>
+    </body>
+</html>

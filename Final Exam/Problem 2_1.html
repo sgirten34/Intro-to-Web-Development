@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Problem 1</title>
+    <script type="text/javascript">
+        function verify(){
+            // variable to contain true/false
+            var valid = true;
+
+            if (document.forms[0].last.value == ""){
+                alert("Last name field cannot be empty.");
+                valid = false;
+            }
+            if (document.forms[0].age.value < 18 || 
+                document.forms[0].age.value > 30){ 
+                alert("Invalid age.");
+                valid = false;
+                }
+            if ( ! (document.forms[0].sex.value == "m" ||
+                document.forms[0].sex.value == "M" ||
+                document.forms[0].sex.value == "f" ||
+                document.forms[0].sex.value == "F") ){
+                alert("Invalid gender.");
+                valid = false;
+                }
+            return valid;
+        }
+
+    </script>
+</head>
+<body>
+    <form action="" method="post" name="aform"><table>
+        <tr><td>Enter first name</td><td><input type="text" name="first" /></td></tr>
+        <tr><td>Enter last name</td><td><input type="text" name="last" />*</td></tr>
+        <tr><td>Enter your age</td><td><input type="text" name="age" size=5 />*</td></tr>
+        <tr><td>Enter your sex</td><td><input type="text" name="sex" size=2 />*</td></tr>
+        <tr><td>Enter your favorite color</td><td><input type="text" name="color" /></td></tr>
+        <tr><td><input type="button" value="Submit" onclick="verify();" /></td></tr>
+        </table></form>
+        
+</body>
+</html>

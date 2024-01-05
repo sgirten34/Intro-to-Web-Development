@@ -1,0 +1,68 @@
+header, nav, main, footer, aside { display: block; }
+body { margin:0;
+       background-color: #ffffff;
+        font-family: sans-serif; }
+#container { background-color: #eeeeee;
+             color: black;
+             width: 80%;
+             margin:0 auto;
+             font-family: Verdana, Arial, sans-serif; }
+header { background-color: white;
+         height: 120px;
+         color: black;
+         text-align: right;
+         padding: 0 20px;
+         border-bottom: 2px solid #000000; }
+img{
+         vertical-align:midde
+         position:absolute
+         position:relative
+         top: -100px
+         left: 100px;}
+.center {display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;  }         		 
+nav { float: left;
+      width: 150px; }
+aside { float: right;
+          width: 200px; }
+main { margin: 0 210px 0 160px;
+        padding: 1px 10px 20px 10px;
+        background-color: #ffffff;
+        color: black; }
+footer { font-size: .70em;
+         text-align: center;
+         color: black;
+         background-color: #ffffff;
+         padding-top: 10px;
+         clear: both; }	 
+h1 { margin-top: 0;
+     font-size: 3em;
+     text-align: left;}
+     /*text-shadow: 2px 2px 2px #000000; }*/
+	 
+header a {font-size: 0.80em; }
+header a:link, header a:visited { color: black; }
+header a:focus, header a:hover { color: black; }
+nav ul { margin-top: 20px;
+         list-style-type: none; }
+nav a { text-decoration: none;
+        font-size: 1.2em; }
+nav a:link { color:black;}
+nav a:visited { color: orange }
+nav a:focus, #nav a:hover { color: red; }
+nav a:active { color: blue;}
+
+main p { margin: 20px; }
+main h2, #main h3 { color: black;
+                     background-color: #ffffff; }
+#floatright { margin: 10px;
+              float: right; }
+aside h3 { padding-bottom: 2px;
+           border-bottom: 1px solid #000000;
+           margin: 10px;
+           font-size: 0.90em;
+		   color: #cc66cc; }
+.news { font-size: 0.80em;
+        margin: 10px; }

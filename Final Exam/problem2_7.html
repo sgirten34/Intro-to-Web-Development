@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="utf-8">
+    <title>Problem 7</title>
+    <script type="text/javascript">
+        var name;
+        var age;
+        var gender;
+
+        name = window.prompt("What is your name?");
+        age = window.prompt("What is your age?", "0");
+        gender = window.prompt("What is your gender?", "M/F");
+
+        if (age < 12){
+            alert("Your age input is not correct!");
+        }
+        if (gender == "F"){
+            document.writeln("<p>Hello, " + name + ", welcome to our web site.</p> ");      
+        }
+        else{
+            document.writeln("<p>Sorry, " + name + ", you must be a female to enter our web site.</p>")
+        }
+
+
+
+    </script>
+</html>

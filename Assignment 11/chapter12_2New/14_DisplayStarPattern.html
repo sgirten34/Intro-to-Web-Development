@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>JavaScript Form Handling</title>
+<meta charset="utf-8">	
+	<script type="text/javascript">
+		<!-- 
+		function displayPattern() {
+			var n = parseInt(document.getElementById("nol").value);
+			for (var c=1; c<=n; c=c+1) {
+				var pattern="";
+				for (var s=1; s<=c; s=s+1)
+					pattern = pattern +"*";
+				document.writeln(pattern + "<br />");
+			}
+		}
+		//  -->
+	</script>
+</head>
+<body>
+	<form name="myForm" id="myForm" action="" onsubmit="displayPattern();">
+		<table>
+			<tr>
+				<td> Input number of lines: </td>
+				<td> <input type="text" name="nol" id="nol" /> </td>
+			</tr>
+			<tr>
+				<td colspan="2"> <input type="submit" value="Submit Info" /> </td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

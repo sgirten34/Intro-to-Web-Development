@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title> Example about how to integrate JavaScript code with variables with HTML code (using pure css approach to format the output) </title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		h3 {	background-color:#d5edb3;
+				color:#5c743d;
+				font-family:Georgia, "Times New Roman", serif;
+				
+		}		
+		body { 	background-color:#f4ffe4;
+				color:#333333;
+				font-family:Arial, Verdana, sans-serif;
+				margin:auto;
+				width:80%; 
+		}	
+		.myRow { height:30px; }
+		.labelCol{		float:left;
+					width: 250px; 
+					text-align: right;
+					padding-right:10px;
+		}
+} 
+	</style>
+	<script type="text/javascript">
+	<!--
+
+		var userName = prompt("Please enter your name");
+		var age = parseInt(prompt("How old are you?"));
+		var ageRange = "";
+
+		if (age < 30) {ageRange = "30 or below";}
+		else if (age < 65) {ageRange = "30-65";}
+		else {ageRange = "65 or above";}
+
+		document.write("<h3>User information </h3>");
+		document.write("<div class=\"myRow\"><b class=\"labelCol\"> Name:" +" </b> "  + userName + "</div>");
+		document.write("<div class=\"myRow\"><b class=\"labelCol\"> Age range:" + " </b> "  + ageRange + "</div>");
+		
+	
+
+	// -->
+	</script>
+</head>
+
+<body>
+
+</body>
+</html>

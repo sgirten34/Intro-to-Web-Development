@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>BDR Micro</title>
+    <style>
+        header { background-color: #80ced6;
+                padding: 10px;
+                border-bottom: 2px solid black;
+                height: 100px;}
+        h1 { text-align: center;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;}
+        h3 { text-align: left;
+             color: #618685;
+             font-family: Verdana, Geneva, Tahoma, sans-serif;
+             background-color: #fefbd8;}
+        body { background-color: #d5f4e6;
+               margin: auto;
+               width: 80%;}
+        p { text-align: center;}
+        table { margin: auto;}
+        div { text-align: center;}
+ 
+    </style>
+    <script type="text/javascript">
+            var conf = confirm("Press OK to Begin Entering Your Order");
+            if (conf == true){
+                // Collect Info from Customer
+                var name = prompt("What is your name?");
+                var address = prompt("What is your address?");
+                var phoneNum = prompt("What is your phone number?");
+                var email = prompt ("What is your email address?");
+                var numChips = prompt("How many chips would you like to buy?");
+
+                // Calculate Order Information
+                var unitCost = 110;
+                var regPrice = numChips * unitCost;
+                var discount;
+
+                if(numChips < 20) {discount = 0}
+                else if(numChips < 50) {discount = 0.02;}
+                else if(numChips < 80) {discount = 0.04;}
+                else if(numChips < 100) {discount = 0.06;}
+                else {discount = 0.08;}
+
+                var savings = regPrice * discount;
+                var discountPrice = regPrice - savings;
+
+
+
+                
+                document.write("<header><h1>BDR Micro Sales</h1></header>")
+                document.write("<p><strong>Thank you for ordering BDR Micro Chips!</strong></p>");
+            
+                document.write("<h3>Client Information</h3>");
+                document.write("<table>");
+
+                document.write("<tr>");
+                document.write("<th align=\"right\" > Name: </th>");
+                document.write("<td>" + name + "</td>");
+		        document.write("</tr>");
+
+                document.write("<tr>");
+                document.write("<th align=\"right\" > Address: </th>");
+                document.write("<td>" + address + "</td>");
+		        document.write("</tr>");
+
+                document.write("<tr>");
+                document.write("<th align=\"right\" > Phone Number: </th>");
+                document.write("<td>" + phoneNum + "</td>");
+		        document.write("</tr>");
+
+                document.write("<tr>");
+                document.write("<th align=\"right\" > Email: </th>");
+                document.write("<td>" + email + "</td>");
+		        document.write("</tr>");
+
+                document.write("</table>");
+
+                document.write("<h3>Order Information</h3>");
+                document.write("<table>");
+
+                document.write("<tr>");
+                document.write("<th align=\"right\" > Number of Chips Purchased: </th>");
+                document.write("<td>" + numChips + "</td>");
+		        document.write("</tr>");
+
+                document.write("<tr>");
+                document.write("<th align=\"right\" > Cost per Unit: </th>");
+                document.write("<td>" + "$" + unitCost + "</td>");
+		        document.write("</tr>");
+
+                document.write("<tr>");
+                document.write("<th align=\"right\" > Regular Price (Before Discount): </th>");
+                document.write("<td>" + "$" + regPrice + "</td>");
+		        document.write("</tr>");
+
+                document.write("<tr>");
+                document.write("<th align=\"right\" > Discount Percent: </th>");
+                document.write("<td>" + discount*100 + "%" + "</td>");
+		        document.write("</tr>");
+
+                document.write("<tr>");
+                document.write("<th align=\"right\" > Amount of Savings: </th>");
+                document.write("<td>" + "$" + savings + "</td>");
+		        document.write("</tr>");
+
+                document.write("<tr>");
+                document.write("<th align=\"right\" > Total Cost After Discount: </th>");
+                document.write("<td>" + "$" + discountPrice + "</td>");
+		        document.write("</tr>");
+
+                document.write("</table>");
+            
+            }
+            else {
+                document.write("<header><h1>BDR Micro Sales</h1></header>")
+                document.write("<p>Thank you for your interest in BDR Micro Chips.</p>");
+            }
+    </script>
+</head>
+<body>
+</body>
+</html>

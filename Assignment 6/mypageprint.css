@@ -1,0 +1,27 @@
+
+#container { background-color: white;}
+header {background-color: white;
+     padding: 10px;
+     border-bottom: 2px solid black;
+     text-align: left;
+     height: 110px;}
+nav { display: none;}
+aside { float: right;
+        width: 30%;}
+main { margin: 0 40% 0 0;
+    padding: 1px 10px 20px 10px;
+    font-size: 12pt;
+    background-color: white;}
+footer { display: none;}
+
+.floatright { margin: 10px;
+           float: right;}
+
+h1 { color: rgb(30, 163, 130);}
+h2 { color: rgb(30, 163, 130);}
+h4 { color: rgb(30, 163, 130);}
+
+nav a:link { color: blue;}
+nav a:visited { color: red;}
+nav a:hover { color:green;}
+nav a:active { color: purple;}

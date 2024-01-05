@@ -1,0 +1,39 @@
+
+
+body { margin: 0;
+       background-color: purple;}
+#container { background-color: lightgray;
+             width: 80%;
+             margin-right: auto;
+             margin-left: auto;
+             overflow: auto;}
+div { background-color: cornsilk;
+      overflow: auto;}
+
+header {background-color: lightslategrey;
+        padding: 10px;
+        border-bottom: 2px solid black;
+        text-align: left;
+        height: 110px;
+        background: url(rome4.jpg) no-repeat right;}
+nav { float: left;
+      width: 200px;
+      overflow: auto;}
+aside { float: right;
+        width: 200px;
+        padding-left: 10px;
+        overflow: auto;}
+main { margin: 0 150 0 150;
+       padding: 1px 10px 20px 10px;
+       background-color: white;
+       overflow: auto;}
+footer { text-align: center;
+         padding-top: 10px;}
+
+.floatright { margin: 10px;
+              float: right;}
+
+nav a:link { color: blue;}
+nav a:visited { color: red;}
+nav a:hover { color:green;}
+nav a:active { color: purple;}

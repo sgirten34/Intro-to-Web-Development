@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Problem 2</title>
+    <style>
+        body { margin: auto;
+               width: 50%;}
+        h2 { border-bottom: 2px solid blue;}
+        table { margin: auto;}
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        th { padding: 5px;}
+    </style>
+    <script type="text/javascript">
+        // Prompt user for input string
+        str = window.prompt("Enter a string");
+
+        document.writeln("<h2> Problem 2</h2>");
+        document.writeln("<table>");
+        document.writeln("<tr><th>Original String</th><th>Lowercase</th><th>UpperCase</th></tr>");
+        document.writeln("<tr><td>" + str + "</td><td>" + str.toLowerCase() + "</td><td>" + str.toUpperCase() + "</td></tr>");
+        document.writeln("</table>");
+
+        document.writeln("<br><br><br>This document was last modified at " + document.lastModified);
+    </script>
+</head>
+</html>

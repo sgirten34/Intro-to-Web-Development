@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Problem 1</title>
+    <style>
+        body { margin: auto;
+               width: 50%;}
+        table { margin: auto;}
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        h2 { border-bottom: 2px solid blue;}
+        th { padding: 5px;}
+    </style>
+    <script type="text/javascript">
+        // Create array of length 10
+        var a = new Array( 10 );
+
+        // Assign indexes 0-4 with value equal to the index
+        for ( var i = 0; i < 5; i++ )
+            a[i] = i;
+
+        // Assign indexs 5-9 with value equal to the index + 2
+        for ( var i = 5; i < 10; i++ ) 
+            a[i] = i + 2;
+
+        function outputProb1( head, arr){
+            document.writeln("<h2>" + head + "</h2>");
+            document.writeln("<table>");
+            document.writeln("<tr><th>Subscript</th><th>Element Value</th><th>Square Root</th></tr>");
+            
+            for ( var i = 0; i < arr.length; i++ )
+                document.writeln("<tr><td>" + i + "</td><td>" + arr[i] + 
+                "</td><td>" + Math.sqrt(arr[i]) + "</td></tr>");
+
+            document.writeln("</table>");
+        }
+
+        outputProb1("Table 1", a);
+
+        var sum = 0;
+        for ( var element in a )
+            sum = sum + a[element];
+
+        // Create Table 2 displaying sum and average of the array
+        document.writeln("<h2> Table 2</h2>");
+        document.writeln("<table>");
+        document.writeln("<tr><th>Sum</th><th>Average</th></tr>");
+        document.writeln("<tr><td>" + sum + "</td><td>" + sum/(a.length - 1) + "</td></tr>");
+        document.writeln("</table>");
+
+
+    </script>
+</head>
+<body></body>
+</html>
